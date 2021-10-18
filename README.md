@@ -7,13 +7,13 @@ WGU Software II: C195_Appointment_Schedule_App
 	Application version: 02	
 	Date: 05/12/2021	
 
-### IDE version: IntelliJ Community 2020.3.1 
-### JDK of version 11: Java SE 11.0.2 
-### JavaFX version compatible with JDK 11: JavaFX-SDK-11.0.9
-### MySQL Workbench 8.0 CE https://dev.mysql.com/downloads/workbench/
+	IDE version: IntelliJ Community 2020.3.1 
+	JDK of version 11: Java SE 11.0.2 
+	JavaFX version compatible with JDK 11: JavaFX-SDK-11.0.9
+	MySQL Workbench 8.0 CE https://dev.mysql.com/downloads/workbench/
 
 
-•The purpose of this application is to develop a GUI-based scheduling desktop application, in order to pass C195 performance assessment requirements. I named it C195_Appointment_Schedule_App.
+The purpose of this application is to develop a GUI-based scheduling desktop application, in order to pass C195 performance assessment requirements. I named it C195_Appointment_Schedule_App.
  C195_Appointment_Schedule_App allows users to create customer records and schedule appointments for customers. This task has provided a MySQL database that does not allow to modify the database structure. All data of this app going to use that database includes user data, customer data, and appointment data.
 
 ### Directions for how to run the C195_Appointment Schedule App
@@ -39,7 +39,7 @@ WGU Software II: C195_Appointment_Schedule_App
 	2.View Appointment Reports --> By selecting contact, display appointments that assigned to contact person. This report include appointment ID, title, type and description, start date and time, end date and time, and customer ID.
 	3.View Appointment Reports --> By selecting user, display appointments that scheduled by user. This report include appointment ID, title, type and description, start date and time, end date and time, and customer ID.
 
-### MySQL Connector driver version: mysql-connector-java-8.0.23
+	MySQL Connector driver version: mysql-connector-java-8.0.23
 
 Lambda expressions locations:
 1. homepageController.initialize
