@@ -1,0 +1,88 @@
+
+.body {
+    -fx-background-color: #c5f274;
+}
+.tableC{
+    -fx-background-color: #f0fade;
+}
+.tableA{
+    -fx-background-color: #f0eade;
+}
+.tableTitle{
+                -fx-font-size: 41px bold;
+                    -fx-text-color: #FFED86;
+                }
+
+.th .tr .td{
+-fx-background-color: lightgrey;
+    -fx-font-size: 11px;
+}
+
+.root{
+    -fx-background-color: #a8bd77;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2A5057;
+}
+.pageLabel{
+                -fx-font-size: 28px bold;
+                    -fx-text-color: #FFED86;
+}
+.headerLabel {
+    -fx-font-size: 22px;
+    -fx-text-fill: #2A5057;
+}
+
+.errorLabel {
+    -fx-text-fill: #e02d1d;
+}
+
+.standard-padding>button{
+    -fx-padding: 10px;
+}
+
+#TitleLabel {
+    -fx-font-size: 12px;
+}
+
+.vbox-main {
+    -fx-border-color: darkgray;
+    -fx-border-insets: 5;
+    -fx-padding: 5;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-border-radius: 3;
+}
+
+.button-boi{
+    -fx-background-color: #FFED86;
+    -fx-border: none;
+    -fx-text-color: black bold;
+    -fx-padding: 5px 5px;
+    -fx-font-size: 14px;
+}
+
+.button-boi:hover {
+    -fx-background-color: lightgrey;
+    -fx-border: none;
+    -fx-text-color: #FFED86;
+}
+
+.button-boi:pressed {
+    -fx-background-color: #027B7B;
+    -fx-border: none;
+    -fx-text-color: #FFED86;
+}
+
+.border-bottom {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}
+
+.choicebox-small {
+    -fx-min-height: 15px;
+    -fx-pref-height: 15px;
+}
+

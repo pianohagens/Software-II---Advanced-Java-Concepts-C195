@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="481.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportController">
+    <stylesheets><URL value="@style.css" /></stylesheets>
+    <Label layoutX="199.0" layoutY="22.0" prefHeight="40.0" prefWidth="306.0" styleClass="pageLabel" text="Appointment Reports">  </Label>
+   <TabPane layoutX="63.0" layoutY="84.0" prefHeight="333.0" prefWidth="558.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text=" Report By Type/Month">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="500.0">
+                  <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="489.0">
+                          <children>
+  <Label layoutX="22.0" layoutY="80.0" prefWidth="85.0" text="Month" />
+  <Label layoutX="141.0" layoutY="80.0" prefHeight="20.0" prefWidth="68.0" text="Type" />
+  <Label layoutX="273.0" layoutY="80.0" prefHeight="20.0" prefWidth="80.0" text="Count" />
+  <Label fx:id="apptCountValue" alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="112.0" prefHeight="20.0" prefWidth="80.0" text="?" textAlignment="CENTER" />
+  <ComboBox fx:id="monthCombo" layoutX="7.0" layoutY="109.0" onAction="#onMonthCombo" prefHeight="26.0" prefWidth="114.0" promptText="Select Month" />
+                              <ComboBox fx:id="typeCombo" layoutX="132.0" layoutY="109.0" onAction="#onTypeCombo" prefHeight="26.0" prefWidth="114.0" promptText="Select Type" />
+
+                          </children>
+                      </AnchorPane>
+                  </children></AnchorPane>
+         </content>
+       </Tab>
+
+       <Tab text="Report by Contact">
+         <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="500.0">
+                  <children>
+                      <TableView fx:id="reportTV" layoutY="6.0" prefHeight="253.0" prefWidth="552.0" styleClass="tableA">
+                          <columns>
+                              <TableColumn fx:id="apptIDCol" prefWidth="62.0" text="Appt ID" />
+                              <TableColumn fx:id="titleCol" minWidth="0.0" prefWidth="54.0" text="Title" />
+                              <TableColumn fx:id="apptTypeCol" prefWidth="58.0" text="Type" />
+                              <TableColumn fx:id="descriptionCol" prefWidth="94.0" text="Description" />
+                              <TableColumn fx:id="apptDateCol" prefWidth="72.0" text="Date" />
+                              <TableColumn fx:id="startCol" prefWidth="59.0" text="Start" />
+                              <TableColumn fx:id="endCol" minWidth="0.0" prefWidth="56.0" text="End" />
+                              <TableColumn fx:id="customerIDCol" prefWidth="92.0" text="Custm ID" />
+                          </columns>
+                      </TableView>
+                     <ComboBox fx:id="contactCombo" layoutX="6.0" layoutY="265.0" onAction="#onContactReportCombo" prefHeight="25.0" prefWidth="120.0" promptText="Select Contact" />
+                  </children>
+           </AnchorPane>
+         </content>
+       </Tab>
+
+       <Tab text=" Report By User ">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="488.0">
+                  <children>
+                     <TableView fx:id="reportTVU" layoutX="7.0" layoutY="8.0" prefHeight="259.0" prefWidth="544.0">
+                       <columns>
+                           <TableColumn fx:id="apptIDColU" prefWidth="62.0" text="Appt ID" />
+                           <TableColumn fx:id="titleColU" minWidth="0.0" prefWidth="45.0" text="Title" />
+                           <TableColumn fx:id="apptTypeColU" prefWidth="50.0" text="Type" />
+                           <TableColumn fx:id="descriptionColU" prefWidth="89.0" text="Description" />
+                           <TableColumn fx:id="apptDateColU" prefWidth="71.0" text="Date" />
+                           <TableColumn fx:id="startColU" prefWidth="69.0" text="Start" />
+                           <TableColumn fx:id="endColU" minWidth="0.0" prefWidth="69.0" text="End" />
+                           <TableColumn fx:id="customerIDColU" prefWidth="88.0" text="Custm ID" />
+                       </columns>
+                     </TableView>
+                      <ComboBox fx:id="userCombo" layoutX="14.0" layoutY="270.0" onAction="#onUserReportCombo" prefHeight="26.0" prefWidth="114.0" promptText="Select User" />
+                  </children>
+           </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+
+    <Button layoutX="255.0" layoutY="417.0" mnemonicParsing="false" onAction="#onBackToHomePage" prefHeight="32.0" prefWidth="142.0" styleClass="button-boi" text="Return Home Page" />
+   <Button layoutX="413.0" layoutY="417.0" mnemonicParsing="false" onAction="#onExit" prefHeight="32.0" prefWidth="80.0" styleClass="button-boi" text="Exit" />
+
+
+    <Label fx:id="resultsLabel" layoutX="24.0" layoutY="425.0" prefHeight="32.0" prefWidth="207.0" styleClass="errorLabel" />
+</AnchorPane>

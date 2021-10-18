@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="859.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.homepageController">
+  <stylesheets><URL value="@style.css" /></stylesheets>
+
+   <children>
+       <Label layoutX="167.0" layoutY="25.0" prefHeight="40.0" prefWidth="547.0" styleClass="pageLabel" text="Welcome to Appointment App Home Page" textFill="#ffed86">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Label>
+       <Label layoutX="170.0" layoutY="65.0" prefHeight="40.0" prefWidth="225.0" styleClass="headerLabel" text="Customers" />
+       <Label layoutX="580.0" layoutY="65.0" prefHeight="40.0" prefWidth="171.0" styleClass="headerLabel" text="Appointments" />
+       <TableView fx:id="customerTV" layoutX="14.0" layoutY="112.0" prefHeight="215.0" prefWidth="404.0" styleClass="tableC">
+           <columns>
+               <TableColumn fx:id="customerIDColCust" prefWidth="82.0" styleClass="th" text="Custm ID" />
+               <TableColumn fx:id="customerNameCol" prefWidth="138.0" styleClass="th" text="Customer Name" />
+               <TableColumn fx:id="divisionCol" prefWidth="109.0" styleClass="th" text="Division" />
+               <TableColumn fx:id="phoneCol" prefWidth="74.0" styleClass="th" text="Phone" />
+           </columns>
+       </TableView>
+       <Button layoutX="23.0" layoutY="340.0" mnemonicParsing="false" onAction="#onLoadCustomerTable" prefHeight="27.0" prefWidth="154.0" styleClass="button-boi" text="Modify Customers" />
+       <Button layoutX="216.0" layoutY="340.0" mnemonicParsing="false" onAction="#onDeleteCustomer" prefHeight="27.0" prefWidth="164.0" styleClass="button-boi" text="Delete Customer" />
+       <TableView fx:id="appointmentTV" layoutX="426.0" layoutY="112.0" prefHeight="215.0" prefWidth="413.0" styleClass="tableA">
+           <columns>
+               <TableColumn fx:id="customerIDColAppt" minWidth="0.0" prefWidth="71.0" styleClass="th" text="Custm ID" />
+               <TableColumn fx:id="apptTypeCol" prefWidth="59.0" styleClass="th" text="Type" />
+               <TableColumn fx:id="descriptionCol" prefWidth="97.0" styleClass="th" text="Description" />
+               <TableColumn fx:id="startCol" prefWidth="54.0" styleClass="th" text="Start" />
+               <TableColumn fx:id="endCol" minWidth="0.0" prefWidth="56.0" styleClass="th" text="End" />
+               <TableColumn fx:id="locationCol" prefWidth="75.0" styleClass="th" text="Location" />
+           </columns>
+       </TableView>
+       <Button layoutX="429.0" layoutY="340.0" mnemonicParsing="false" onAction="#onLoadAppointment" prefHeight="27.0" prefWidth="191.0" styleClass="button-boi" text="Modify Appointments" />
+       <Button layoutX="632.0" layoutY="340.0" mnemonicParsing="false" onAction="#onDeleteAppt" prefHeight="27.0" prefWidth="178.0" styleClass="button-boi" text="Delete Appointment" />
+       <Label fx:id="deleteCustAlert" layoutX="23.0" layoutY="379.0" styleClass="errorLabel" text="" />
+       <Button layoutX="230.0" layoutY="421.0" mnemonicParsing="false" onAction="#onLoadReports" prefHeight="46.0" prefWidth="188.0" styleClass="button-boi" text="View Appointment Reports" />
+       <Button layoutX="426.0" layoutY="421.0" mnemonicParsing="false" onAction="#onExit" prefHeight="46.0" prefWidth="154.0" styleClass="button-boi" text="Exit" />
+       <Label fx:id="apptReminder" contentDisplay="CENTER" layoutX="426.0" layoutY="379.0" prefHeight="40.0" prefWidth="426.0" styleClass="errorLabel" text="" />
+   </children>
+</AnchorPane>
