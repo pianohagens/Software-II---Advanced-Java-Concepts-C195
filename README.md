@@ -1,4 +1,4 @@
-## Software-II-Advanced-Java-Concepts-C195
+## Appointment Schedule App
 
 WGU Software II: C195_Appointment_Schedule_App	
 
@@ -16,7 +16,7 @@ WGU Software II: C195_Appointment_Schedule_App
 The purpose of this application is to develop a GUI-based scheduling desktop application, in order to pass C195 performance assessment requirements. I named it C195_Appointment_Schedule_App.
  C195_Appointment_Schedule_App allows users to create customer records and schedule appointments for customers. This task has provided a MySQL database that does not allow to modify the database structure. All data of this app going to use that database includes user data, customer data, and appointment data.
 
-### Directions for how to run the C195_Appointment Schedule App
+### Directions for how to run the Appointment Schedule App
 
 	Steps:
 	1. User Login =>  Home Page, Home page is the dashboard to Customer Record Page or to Schedule Appointment Page.
